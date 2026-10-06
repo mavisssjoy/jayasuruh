@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jaya Suruh — Suruh apa saja, beres</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Figtree:wght@400;600&display=swap">
+<style>
+:root{--bg:#f6f7fa;--ink:#14213d;--card:#fff;--line:#d9deea;--accent:#ffc93c;--accent-ink:#14213d;--muted:#55607a;--band:#14213d;--band-ink:#f6f7fa;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1424;--ink:#eef1f8;--card:#172038;--line:#2a3555;--muted:#a3adc7;--band:#ffc93c;--band-ink:#14213d}}
+:root[data-theme="dark"]{--bg:#0e1424;--ink:#eef1f8;--card:#172038;--line:#2a3555;--muted:#a3adc7;--band:#ffc93c;--band-ink:#14213d}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,sans-serif;line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:'Bricolage Grotesque',Impact,sans-serif;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:22px;text-decoration:none}
+.logo span{background:var(--accent);color:var(--accent-ink);padding:0 8px;border-radius:6px;margin-left:2px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:600;padding:13px 22px;border-radius:999px;text-decoration:none;border:0;font:inherit;font-weight:600;cursor:pointer}
+.btn:hover{filter:brightness(.95)}
+.hero{padding:40px 0 56px}
+.hero h1{font-size:clamp(52px,14vw,120px);font-weight:800;letter-spacing:-.03em}
+.hero h1 em{font-style:normal;background:var(--accent);color:var(--accent-ink);padding:0 .12em;display:inline-block;transform:rotate(-2deg)}
+.hero p{max-width:34ch;font-size:20px;color:var(--muted);margin:22px 0 28px}
+.band{background:var(--band);color:var(--band-ink);padding:56px 0}
+.band h2,.sec h2{font-size:clamp(32px,6vw,48px);font-weight:800;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.band .item{border:2px solid currentColor;border-radius:14px;padding:18px 20px}
+.band .item h3{font-size:22px;margin-bottom:6px}
+.band .item p{margin:0;opacity:.85}
+.sec{padding:56px 0}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.steps li::before{content:counter(s);flex:none;width:38px;height:38px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:800}
+.steps b{display:block}
+.steps span{color:var(--muted)}
+.ticket{background:var(--card);border:2px dashed var(--ink);border-radius:18px;padding:24px;max-width:560px}
+.ticket label{display:block;font-weight:600;margin:14px 0 6px}
+.ticket input,.ticket textarea,.ticket select{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px}
+.ticket textarea{min-height:100px;resize:vertical}
+.ticket .btn{margin-top:20px;width:100%;text-align:center}
+.note{color:var(--muted);font-size:15px;margin-top:12px}
+.price{display:flex;flex-wrap:wrap;gap:14px}
+.price div{flex:1 1 200px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.price strong{font-family:'Bricolage Grotesque',sans-serif;font-size:28px;display:block}
+footer{padding:32px 0 48px;color:var(--muted);font-size:15px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a class="logo" href="#">Jaya<span>Suruh</span></a><a class="btn" href="#pesan">Suruh sekarang</a></nav>
+  <header class="hero">
+    <h1>Suruh aja.<br><em>Beres.</em></h1>
+    <p>Tidak sempat, malas keluar, atau lagi repot? Kasih tahu apa yang perlu dikerjakan, kurir kami yang jalan.</p>
+    <a class="btn" href="#pesan">Tulis suruhan</a>
+  </header>
+</div>
+
+<section class="band" id="layanan"><div class="wrap">
+  <h2>Bisa disuruh apa?</h2>
+  <div class="grid">
+    <div class="item"><h3>Titip beli</h3><p>Makanan, obat, belanja dapur, barang dari toko mana pun.</p></div>
+    <div class="item"><h3>Antar &amp; ambil</h3><p>Dokumen, paket, barang ketinggalan, kunci, laundry.</p></div>
+    <div class="item"><h3>Antri-in</h3><p>Loket, kantor pajak, daftar online, beli tiket, cap stempel.</p></div>
+    <div class="item"><h3>Bantu-bantu</h3><p>Pindahan kecil, rakit furnitur, jaga barang, bersih-bersih ringan.</p></div>
+    <div class="item"><h3>Lain-lain</h3><p>Punya suruhan yang tidak ada di daftar? Tanya saja, selama legal kami usahakan.</p></div>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <h2>Cara kerjanya</h2>
+  <ol class="steps">
+    <li><div><b>Tulis suruhanmu</b><span>Apa yang dikerjakan, di mana, dan kapan.</span></div></li>
+    <li><div><b>Kami konfirmasi lewat WhatsApp</b><span>Biaya dikabari di depan, tidak ada kejutan.</span></div></li>
+    <li><div><b>Kurir jalan</b><span>Kamu dapat kabar dan foto bukti saat selesai.</span></div></li>
+  </ol>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <h2>Biaya</h2>
+  <div class="price">
+    <div><strong>Rp15.000</strong>Suruhan dekat (± 3 km)</div>
+    <div><strong>Rp30.000</strong>Suruhan jauh atau butuh antri</div>
+    <div><strong>Nego</strong>Suruhan besar atau lebih dari 1 jam</div>
+  </div>
+  <p class="note">Harga di atas contoh, belum termasuk harga barang yang dibelikan.</p>
+</div></section>
+
+<section class="sec" id="pesan" style="padding-top:0"><div class="wrap">
+  <h2>Tulis suruhanmu</h2>
+  <div class="ticket">
+    <label for="nama">Nama kamu</label>
+    <input id="nama" autocomplete="name" placeholder="Contoh: Budi">
+    <label for="tugas">Apa yang harus dikerjakan?</label>
+    <textarea id="tugas" placeholder="Contoh: Beli nasi goreng 2 bungkus di Warung Pak Jaya, antar ke rumah."></textarea>
+    <label for="lokasi">Alamat / lokasi</label>
+    <input id="lokasi" autocomplete="street-address" placeholder="Jalan, nomor, patokan">
+    <label for="waktu">Kapan?</label>
+    <select id="waktu"><option>Secepatnya</option><option>Hari ini</option><option>Besok</option><option>Jadwal lain (saya jelaskan di chat)</option></select>
+    <button class="btn" id="kirim" type="button">Kirim lewat WhatsApp</button>
+    <p class="note" id="msg" role="status">Kamu akan diarahkan ke WhatsApp dengan pesan yang sudah terisi.</p>
+  </div>
+</div></section>
+
+<div class="wrap"><footer>© Jaya Suruh. Kami tidak menerima suruhan yang melanggar hukum atau membahayakan orang.</footer></div>
+
+<script>
+// Nomor WhatsApp Jaya Suruh (format 62, tanpa + atau 0 di depan)
+var NOMOR_WA = "6289672359845";
+document.getElementById("kirim").addEventListener("click", function(){
+  var n = document.getElementById("nama").value.trim();
+  var t = document.getElementById("tugas").value.trim();
+  var l = document.getElementById("lokasi").value.trim();
+  var w = document.getElementById("waktu").value;
+  var m = document.getElementById("msg");
+  if(!t){ m.textContent = "Isi dulu apa yang harus dikerjakan."; document.getElementById("tugas").focus(); return; }
+  var teks = "Halo Jaya Suruh, saya mau menyuruh:\n\n" +
+    "Nama: " + (n || "-") + "\nSuruhan: " + t + "\nLokasi: " + (l || "-") + "\nWaktu: " + w;
+  window.open("https://wa.me/" + NOMOR_WA + "?text=" + encodeURIComponent(teks), "_blank");
+});
+</script>
+</body>
+</html>
